@@ -1,0 +1,23 @@
+/*
+  Esse arquivo serve para sobrescrever  um css
+  ex:
+
+  .el-form {
+    .el-form-item {
+      .el-imput {
+        background-color: pink;
+      }
+    }
+  }
+
+  quanto mais especifico vc for na construção da arvore melhor
+
+  Se por um acaso você precisar sobrescrever uma cor padrão do element(uma coisa mais radical)
+
+  :root {
+    --el-color-primary: red !important;
+  }
+*/
+.el-notification .el-notification__group .el-notification__content {
+  text-align: left;
+}

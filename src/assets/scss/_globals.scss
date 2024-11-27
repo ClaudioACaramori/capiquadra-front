@@ -1,0 +1,12 @@
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  // Aqui se coloca a font que foi configurado no _fonts.scss
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+// Exemplo de configuração de font
+/*
+  - Procurar a font no https://fonts.google.com/ (Caso não tenha, falar com o designer)
+  - Colocar os arquivos .ttf na pasta @/assets/fonts/@at-root
+  - Depois configurar esse arquivo com as fontes que deseja (Regular, Medium, Bold, etc...)
+*/
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 100;
+  src: local('Poppins-Thin'), url(@/assets/fonts/Poppins-Thin.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  src: local('Poppins-Light'), url(@/assets/fonts/Poppins-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  src: local('Poppins-Regular'), url(@/assets/fonts/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 500;
+  src: local('Poppins-Medium'), url(@/assets/fonts/Poppins-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 600;
+  src: local('Poppins-SemiBold'), url(@/assets/fonts/Poppins-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 700;
+  src: local('Poppins-Bold'), url(@/assets/fonts/Poppins-Bold.ttf) format('truetype');
+}

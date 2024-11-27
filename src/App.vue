@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <reservation-form />
+    <navigation />
+
+    <main class="container">
+      <router-view />
+    </main>
+
+    <snackbar />
+    <loading />
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+import Snackbar from '@/components/feedbacks/AppSnackbar.vue';
+import Loading from '@/components/feedbacks/AppLoading.vue';
+import Navigation from '@/components/navigation/AppNavigation.vue';
+import ReservationForm from '@/components/dialogs/ReservationForm.vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+body {
+  margin: 0;
+
+  .app {
+    .container {
+      min-height: 100vh;
+      padding: 20px;
+    }
+  }
 }
 </style>
